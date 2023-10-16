@@ -1,7 +1,6 @@
-## Nama
-Nama  : Adrian Ismu Arifianto
-
-NRP   : 5025211116
+| Nama | NRP |
+| ------- | ------- |
+| Adrian Ismu Arifianto | 5025211116  |
 
 # TCP
 
@@ -103,7 +102,7 @@ What is the minimum amount of available buffer space advertised to the client by
 - `13712`
 - `Receiver buffer spacer` tidak pernah membatasi pengirim karena window size value selalu lebih besar dari length
 
-### No.9
+## No.9
 ### Soal
 - Are there any retransmitted segments in the trace file?
 - What did you check for (in the trace) in order to answer this question?
@@ -123,17 +122,17 @@ What is the minimum amount of available buffer space advertised to the client by
 - Jika data terdouble, segmen acking pada setiap segmen yang diterima, contohnya pada segmen kedua yang datanya terdouble dari `1448` menjadi `2896 byte`
 
 
-### No.11
+## No.11
 ### Soal
 What is the throughput (bytes transferred per unit time) for the TCP connection?
 ### Jawab
 
-### No.12
+## No.12
 ### Soal
 Use the Time-Sequence-Graph(Stevens) plotting tool to view the sequence number versus time plot of segments being sent from the client to the gaia.cs.umass.edu server.
 ### Jawab
 
-### No.13
+## No.13
 ### Soal
 These “fleets” of segments appear to have some periodicity. What can you say about the period?
 ### Jawab
@@ -187,6 +186,8 @@ What is the largest possible source port number?
 ### Soal
 What is the protocol number for UDP?
 ### Jawab
+![image](https://github.com/adrianismu/TCP-UDP/assets/71255346/98f3a4c0-3eaa-4a51-98f7-3b1beae4a8cc)
+`UDP = (17)`
 
 ## No.7
 ### Soal
@@ -196,6 +197,9 @@ Examine the pair of UDP packets in which your host sends the first UDP packet an
 - What is the packet number of the second of these two UDP segments in the trace file?
 - Describe the relationship between the port numbers in the two packets.
 ### Jawab
+
+![image](https://github.com/adrianismu/TCP-UDP/assets/71255346/2d323a7e-0122-4ff5-af15-520ac70177d5)
+
 
 - Paket 15
 - Paket 17
