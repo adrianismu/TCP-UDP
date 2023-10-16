@@ -96,6 +96,9 @@ Consider the TCP segment containing the HTTP “POST” as the first segment in 
 - What is the minimum amount of available buffer space advertised to the client by gaia.cs.umass.edu among these first four data-carrying TCP segments?
 - Does the lack of receiver buffer space ever throttle the sender for these first four datacarrying segments?
 ### Jawab
+
+![image](https://github.com/adrianismu/TCP-UDP/assets/71255346/2d1a28a8-7e87-48fe-958d-237cdd01aa5e)
+
 - `13712`
 - `Receiver buffer spacer` tidak pernah membatasi pengirim karena window size value selalu lebih besar dari length
 
@@ -116,7 +119,7 @@ Consider the TCP segment containing the HTTP “POST” as the first segment in 
 
 ### Jawab
 - `1448 byte`
-- Jika data terdouble, segmen acking pada setiap segmen yang diterima, contohnya pada segmen kedua yang datanya terdouble dari `1448` menjadi `2896 byte`
+- Jika data mengalami duplikasi, segmen ACKing setiap kali segmen diterima, seperti pada segmen kedua di mana data yang seharusnya berukuran `1448 byte` menjadi `2896 byte` karena adanya duplikasi.
 
 
 ## No.11
