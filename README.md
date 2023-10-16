@@ -41,6 +41,9 @@ What is the sequence number of the SYNACK segment sent by gaia.cs.umass.edu to t
 
 ![Screenshot 2023-10-16 220554](https://github.com/adrianismu/TCP-UDP/assets/71255346/cd6c3dc0-6ccc-44cd-8d2d-48d4dd1d5a4c)
 
+- Sequence Number: `0` (relative sequence number) & Sequence Number (raw): `1068969752`,
+- Karena flag 0x012 menandakan segmen SYN ACK
+- Acknowledgment number (raw): `4236649188`, Acknowledgement number diperoleh dengan menambahkan angka 1 pada sequence number dari segmen SYN (ACK = sequence number + 1).
 
 ## No.5
 ### Soal
@@ -49,17 +52,18 @@ What is the sequence number of the TCP segment containing the header of the HTTP
 ### Jawab
 ![Screenshot 2023-10-16 220811](https://github.com/adrianismu/TCP-UDP/assets/71255346/e46c89de-5a26-4cff-ae5e-d871f2c24143)
 
-Sequence Number: `152041 (relative sequence number)` 
-
-Sequence Number (raw): `4236801228`
-
-TCP payload: `(1385 bytes)`
-
+- Sequence Number: `152041 (relative sequence number)` 
+- Sequence Number (raw): `4236801228`
+- TCP payload: `(1385 bytes)`
+- Tidak
 ## No.6
 ### Soal
 Consider the TCP segment containing the HTTP “POST” as the first segment in the data transfer part of the TCP connection.
 
 ### Jawab
+
+![image](https://github.com/adrianismu/TCP-UDP/assets/71255346/2fd88341-f3f3-438b-a8ba-8bbcfeb2ad1b)
+
 
 - At what time was the first segment (the one containing the HTTP POST) in the data-transfer part of the TCP connection sent? `0.24047`
 
@@ -86,13 +90,6 @@ Consider the TCP segment containing the HTTP “POST” as the first segment in 
 - frame: 9 : length = 32 + 1448 = `1480 bytes`
 
 - Total length 1480 * 4 = `5920 bytes`
-
-## No.7
-### Soal
-What is the minimum amount of available buffer space advertised to the client by gaia.cs.umass.edu among these first four data-carrying TCP segments? Does the lack of receiver buffer space ever throttle the sender for these first four data carrying segments?
-### Jawab
-
-4 * (Payload + Header) = 4 * (1448 + 32) = 4 * 1480 = `5920 byte`
 
 ## No.8
 ### Soal
